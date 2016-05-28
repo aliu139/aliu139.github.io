@@ -1,0 +1,82 @@
+<div class="jumbotron" style="overflow-x:hidden">
+  <h1>Experience</h1>
+
+  <hr></hr>
+  
+	<div class="btn-group" role="group" aria-label="...">
+  		<button type="button" class="btn btn-default" ng-click="show = 0">Current Positions</button>
+  		<button type="button" class="btn btn-default" ng-click="show = 1">Previous Internships</button>
+  		<button type="button" class="btn btn-default" ng-click="show = 2">Hackathons</button>
+  		<button type="button" class="btn btn-default" ng-click="show = 3">Skills</button>
+	</div>
+
+	<h2 ng-show="show == 0"> Current Positions </h2>
+	<div class="panel panel-default" ng-show="show == 0" ng-repeat="p in pos">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">{{p.title}}</h3>
+        <a href={{p.link}}>{{p.link}}</a>
+  		</div>
+  		<div class="panel-body">
+    		{{p.desc}}
+  		</div>
+	</div>
+
+	<h2 ng-show = "show == 1"> Previous Internships </h2>
+	<div class="panel panel-default" ng-show = "show == 1" ng-repeat="p in prev">
+  		<div class="panel-heading">
+        <a href={{p.link}}>
+    		  <h3 class="panel-title" style="color:black">{{p.title}} ({{p.date}})</h3>
+        </a>
+  		</div>
+  		<div class="panel-body">
+    		{{p.desc}}
+  		</div>
+	</div>
+
+	<h2 ng-show="show == 2"> Hackathons </h2>
+	<div class="panel panel-default" ng-show="show == 2" ng-repeat="h in hack">
+  		<div class="panel-heading">
+        <a href={{h.link}}>
+    		  <h3 class="panel-title" style="color:black">{{h.hackathon}} ({{h.date}})</h3>
+        </a>
+  		</div>
+  		<div class="panel-body">
+        <div class="media">
+          <div class="media-left">
+            <a href={{h.link}}>
+              <img class="media-object img-rounded" id="hackLogo" ng-src="{{h.img}}"> </img>
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading"> {{h.proj}} - </h4>
+            <a class="not-active">{{h.desc}}</a>
+          </div>
+        </div> 
+  		</div>
+	</div>
+
+	<h2 ng-show="show == 3"> Skills </h2>
+  <div class="row" style="overflow-x: auto">
+    <div class="col-xs-6">
+  	<div class="panel panel-default" ng-show="show == 3" style="width:30%">
+    		<div class="panel-heading">
+      		<h3 class="panel-title">Programming</h3>
+    		</div>
+    		<div class="panel-body" ng-repeat="s in skills">
+      			<li>{{s}}</li>
+    		</div>
+    </div>
+    </div>
+    <div class="col-xs-6">
+    <div class="panel panel-default" ng-show="show == 3" style="width:30%">
+    		<div class="panel-heading">
+    			<h3 class="panel-title">Other</h3>
+    		</div>
+    		<div class="panel-body" ng-repeat="o in other">
+    				<li> {{o}} </li>
+    		</div>
+  	</div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,211 @@
+html, body {
+  height: 100%;
+  background: linear-gradient(270deg, #1e288a, #000105);
+  /*background-color: #2B2D42;*/
+}
+
+#foot{
+	text-align: center;
+}
+
+i {
+	display: inline-block;
+  	margin-right: 10px;
+}
+
+.panel{
+  color:white;
+  background-color: transparent;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.jumbotron{
+  padding-top: 70px;
+	text-align: center;
+	background-color: transparent;
+	color: #EDF2F4;
+  padding-bottom: 70px;
+}
+
+.jumbotron,
+.navbar{
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+  color:#000105;
+	background-color: white;
+}
+
+.btn,
+.btn-outline-inverse {
+    color: #fff;
+    background-color: transparent;
+    border-color: #cdbfe3;
+}
+
+.btn-outline-inverse:hover {
+  color: #EDF2F4;
+  opacity: 0.75;
+}
+
+#img-special{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+#img-special:hover {
+}
+
+.grid {
+    width:80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+
+/* clearfix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    width: 33%;
+    /*height: 320px;*/
+    float: left;
+    /* Use for debugging
+    border: 5px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;*/
+}
+
+.wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:200px;
+  height:200px;
+}
+
+.wrapper .text {
+  position:relative;
+  font-size: 17px;
+  bottom:200px;
+  left:0px;
+  visibility:hidden;
+}
+
+.wrapper:hover .text {
+  visibility:visible;
+}
+
+.wrapper img{
+      display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+.wrapper:hover img{
+  opacity: 0.4;
+}
+
+hr{
+    padding: 0;
+    width: 90%;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+.fade.ng-enter {
+  -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.fade.ng-leave {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+
+#hackLogo{
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:70px;
+  height:70px;
+}
+
+.not-active {
+   color:white;
+   pointer-events: none;
+   cursor: default;
+}
+
+.specialWell {
+  color:black;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.specialWellText{
+  font-size: 120%;
+  text-align: left;
+}
+
+.redPillCont{
+  overflow: hidden; 
+  position:relative; 
+  width: 935px; 
+  height: 1210px; 
+  background-color:white; 
+  display:block; 
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: 100px;
+  margin-bottom: 100px; 
+}
+
+video.instagram, 
+img.instagram {
+  width: 100% !important;
+  height: auto !important;
+  width:612px;
+  height:612px;
+}

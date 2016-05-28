@@ -1,0 +1,16 @@
+<div class="jumbotron" style="padding-bottom:600px;">
+	<h1> Projects </h1>
+	<hr></hr>
+	<div class="grid" style="padding-bottom:250px;">
+		<a ng-repeat="p in projects" ng-href="{{p.link}}" style="color:white">
+			<div class="grid-item">
+			<h3> {{p.title}} </h3>
+				<div class="wrapper">
+	  				<img class="img-responsive img-rounded hover" id="img-special" ng-src="{{p.img}}" > </img>
+	  				<p class="text"> {{p.text}} </p>
+	  			</div>
+			</div>
+		</a>
+	</div>
+</div>
+
