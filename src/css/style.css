@@ -17,6 +17,8 @@ a { color: inherit; }
 
 .jumbotron .container{
 	height:100%;
+	padding-left: 75px;
+	padding-right: 75px;
 }
 
 .container{
@@ -25,4 +27,3 @@ a { color: inherit; }
 
 .contact-icon{
 	padding-left: 13px;
-}
