@@ -1,16 +1,36 @@
 <div class="jumbotron">
 	<div class="js-slideout-toggle">
 		<i class="fa fa-bars fa-2x" aria-hidden="true" style="padding-left:15px"></i> 
-		<h3 style="display:inline; padding-left:10px;"> Menu </h3>
+		<!-- <h3 style="display:inline; padding-left:10px;"> Menu </h3> -->
 	</div>
 	
-	<div class="container">
-		<h1>Austin Liu </h1>
+	<div class="container main">
+		<p> i am </p>
+		<h1> Austin Liu </h1>
+		
+		<div style="padding-top:40px;">
+			<p> i create </p>
+
+			<div class="main">
+				<h2> experiences </h2>
+				<p> through coding </p>
+			</div>
+
+			<div class="main" style="padding-top:8px;">
+				<h2> opportunties </h2>
+				<p> by giving back </p>
+			</div>
+
+			<div class="main" style="padding-top:8px;">
+				<h2> happiness </h2> 
+				<p> with a bit of magic </p>
+			</div>
+		</div>
 	</div>
 
 
 	<script>
-		document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+		document.querySelector('.js-slideout-toggle').addEventListener('mouseover', function() {
 		  slideout.toggle();
 		  $('.js-slideout-toggle').css('visibility','hidden');
 		});

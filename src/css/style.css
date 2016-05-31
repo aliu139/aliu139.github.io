@@ -27,3 +27,15 @@ a { color: inherit; }
 
 .contact-icon{
 	padding-left: 13px;
+}
+
+.main{
+  text-align: left;
+}
+
+.main p{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
