@@ -2,13 +2,17 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2{
+h1, h2, h3{
 	font-weight: 100;
 }
+
+a { color: inherit; } 
 
 .jumbotron{
 	height:100vh;
 	margin:0;
+	padding-left: 3vw;
+	padding-right: 3vw;
 }
 
 .jumbotron .container{
@@ -17,4 +21,8 @@ h1, h2{
 
 .container{
 	width:100%;
+}
+
+.contact-icon{
+	padding-left: 13px;
 }
