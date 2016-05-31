@@ -14,3 +14,7 @@ h1, h2{
 .jumbotron .container{
 	height:100%;
 }
+
+.container{
+	width:100%;
+}
