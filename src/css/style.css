@@ -108,3 +108,8 @@ a { color: inherit; }
   width: 24vw;
   height: 26vh;
 }
+
+.upicon{
+  display: block;
+  text-align: center;
+}
