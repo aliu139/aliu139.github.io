@@ -40,3 +40,71 @@ a { color: inherit; }
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
+#photowall{
+  width: 80vw;
+}
+
+#photowall ul {
+  list-style-type: none;
+}
+ 
+#photowall li {
+  float: left;
+  position: relative;
+  width: 18vw;
+  height: 20vh;
+  overflow: hidden;
+}
+ 
+#photowall li:hover {
+  cursor: pointer;
+}
+
+#photowall li p {
+  color: transparent;
+  background: transparent;
+  /*font: 200 30px/187px 'Arvo', Helvetica, Arial, sans-serif;*/
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size:120%;
+
+  position: absolute;
+  margin-bottom: 0;
+  width: 18vw;
+  height: 20vh; 
+
+  line-height: 20vh;
+ 
+  padding-left: 2px;
+  padding-right: 2px;
+
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+ 
+#photowall li:hover p {
+  color: white;
+  background: #000; /*fallback for old browsers*/
+  background: rgba(0,0,0,0.7);
+}
+
+#photowall img {
+  width: 18vw;
+  height: 20vh;
+  
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+ 
+#photowall li:hover img {
+  width: 24vw;
+  height: 26vh;
+}
