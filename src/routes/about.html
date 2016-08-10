@@ -7,7 +7,7 @@
 
 		<p> If you haven't already noticed, I'm a front-end developer who loves using AngularJS, finding new ways to express myself, and performing magic on occasion!</p>
 
-		<h3> If you found that a bit confusing, take a look at my <a> skills </a> and the <a> hackathons</a> I've been to!</h3>
+		<h3> If you found that a bit confusing, take a look at my <a href="#skills"> skills </a> and the <a href="#hackathons"> hackathons</a> I've been to!</h3>
 	</div>
 
 	<script>
@@ -23,6 +23,12 @@
 		<h1> Hackathons I've Been To! </h1>
 		<p></p>
 
+		<div>
+			<img class="hackathon-logo" src="res/hackathons/angelhack.png">
+			<img class="hackathon-logo" src="res/hackathons/bigredhacks.png">
+			<img class="hackathon-logo" src="res/hackathons/hackprinceton.png">
+			<img class="hackathon-logo" src="res/hackathons/treehacks.png">
+		</div>
 		
 	</div>
 
@@ -40,3 +46,20 @@
 	<a href="#top" class="upicon"> <i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i> </a>
 </div>
 
+<script>
+/*For Smooth Scrolling*/
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+</script>

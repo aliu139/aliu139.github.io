@@ -165,3 +165,8 @@ a { color: inherit; }
   padding-bottom: 5px;
   display: inline-block;
 }
+
+.hackathon-logo{
+  width: 200px;
+  height: 200px;
+}
