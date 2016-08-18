@@ -156,7 +156,6 @@ a { color: inherit; }
 }
 
 .transbox {
-  /*background-color: #ffffff;*/
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
   padding-top: 5px;
