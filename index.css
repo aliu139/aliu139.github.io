@@ -25,10 +25,15 @@ a{
     text-decoration: underline;
 }
 
+#experience p{
+    margin: 0px;
+}
+
 .experience-icon{
     display: inline-block;
     padding: 3px;
     text-align: center;
+    margin-top: 10px;
 }
 
 #contactMe{
@@ -90,10 +95,21 @@ a{
     font-size: 20px;
 }
 
+.profile-picture{
+    width: 100px;
+    display: inline-block;
+}
+
+.tablet-text{
+    margin-top: 10px;
+}
+
 @media (max-width: 768px) {
     /* Mobile Specific Changes*/
-    #main{
-        color:red;
+
+    .profile-picture{
+        width: 80px;
+        display: inline-block;
     }
 
     .blob{

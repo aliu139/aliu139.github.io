@@ -4,6 +4,11 @@ var tablet = new Vue({
     message: 'Hello Vue!',
     li: [],
     display: {}
+  },
+  methods: {
+    checkScreen: function(){
+      return ($(window).width() > 768);
+    }
   }
 });
 
