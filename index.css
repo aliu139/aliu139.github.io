@@ -1,0 +1,77 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#main{
+    text-align: center;
+    display: block;
+    height: 100vh;
+}
+
+#contactMe{
+    margin-top: 3vh;
+    text-align: center;
+}
+
+#tablet{
+    display:inline-block;
+    min-height: 30vw;
+    position: relative;
+    max-width: 90%;
+    min-width: 90%;
+}
+
+.backgroundTablet{
+    width: 100%;
+    position:absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.tabletMaterial{
+    text-align: left;
+    padding: 5vw;
+    max-height: 30vw;
+}
+
+.contact{
+    font-size: 25px;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.blob{
+    display: block;
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    /* Mobile Specific Changes*/
+    #main{
+        color:red;
+    }
+
+    .blob{
+        display: block;
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+
+    #tablet{
+        display:inline-block;
+        min-height: 60vw;
+        position: relative;
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
