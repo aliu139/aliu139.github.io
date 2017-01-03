@@ -17,6 +17,20 @@ a{
     height: 100vh;
 }
 
+#side{
+    padding-right: 60px;
+}
+
+#side h2{
+    text-decoration: underline;
+}
+
+.experience-icon{
+    display: inline-block;
+    padding: 3px;
+    text-align: center;
+}
+
 #contactMe{
     margin-top: 3vh;
     text-align: center;
@@ -46,8 +60,8 @@ a{
 }
 
 .project-icon{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
 }
 
 .contact{
@@ -63,8 +77,6 @@ a{
     float: left;
     padding: 15px;
 }
-
-
 
 #projects h3{
     display: inline-block;
@@ -102,5 +114,13 @@ a{
         text-align: left;
         padding: 8vw;
         max-height: 30vw;
+    }
+    #side{
+        padding-right: 30px;
+    }
+    .experience-icon{
+        display: inline-block;
+        padding: 4px;
+        text-align: center;
     }
 }

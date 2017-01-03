@@ -15,6 +15,31 @@
             "pic": "https://raw.githubusercontent.com/aliu139/eagleEye/master/res/ee.png"
         }
     ],
-    "exp": [],
+    "exp": [
+        {
+            "pic": "https://pbs.twimg.com/profile_images/597794910155210752/yCf0aPVL.png",
+            "dates": "2015-2018",
+            "square": true,
+            "url": "http://bigredhacks.com/"
+        },
+        {
+            "pic": "https://compass-ssl.microsoft.com/assets/bc/84/bc84e95b-76b9-4b24-ad5f-9748a2d75b1b.svg?n=microsoft_account_logo_color.svg",
+            "dates": "Summer 2017",
+            "square": true,
+            "url": "https://www.microsoft.com/en-us/"
+        },
+        {
+            "pic":  "https://lh4.googleusercontent.com/-MFlChHnj3dE/AAAAAAAAAAI/AAAAAAAAAOk/tPAveG8I8ic/s250-c-k/photo.jpg",
+            "dates": "Summer 2016",
+            "square": false,
+            "url": "https://www.priceline.com/"
+        },
+        {
+            "pic": "https://maxcdn.icons8.com/Share/icon/Messaging//more1600.png",
+            "dates": "See More",
+            "square": false,
+            "url": "https://www.linkedin.com/in/aliu139"
+        }
+    ],
     "tablet": []
 }

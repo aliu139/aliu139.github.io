@@ -43,7 +43,12 @@ var experience = new Vue({
   data: {
     message: 'Hello Vue!',
     li: [],
-    display: {}
+    display: {
+      pic: "http://ieeecornell.org/wp-content/themes/ieeecornell/img/cornell-logo.gif",
+      dates: "2014-2018",
+      square: false,
+      url: "https://www.cornell.edu/"
+    }
   }
 });
 

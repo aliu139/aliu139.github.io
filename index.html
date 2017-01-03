@@ -54,11 +54,31 @@
             <a class="icon ion-arrow-left-c" style="float:right;" v-if="counter > 0" v-on:click="prev()"></a>
 
         </div>
-        <hr>
+
         <div id="experience">
             <h2> Experience </h2>
+            <div class="experience-icon">
+                <a v-bind:href="display.url">
+                <img 
+                    v-bind:src="display.pic" 
+                    v-bind:class="{ 'img-circle': !display.square }" 
+                    class="project-icon">
+                </img>
+                <p> {{display.dates}} </p>
+                </a>
+            </div>
+            <div v-for="el in li" class="experience-icon">
+                <a v-bind:href="el.url">
+                <img 
+                    v-bind:src="el.pic" 
+                    v-bind:class="{ 'img-circle': !el.square }" 
+                    class="project-icon">
+                </img>
+                <p> {{el.dates}} </p>
+                </a>
+            </div>
         </div>
-        <hr>
+
         <div>
             <h2> Other </h2>
         </div>
