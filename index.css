@@ -6,6 +6,11 @@ a:hover{
     text-decoration: none;
 }
 
+a{
+    color: black;
+    padding-right: 5px;
+}
+
 #main{
     text-align: center;
     display: block;
@@ -40,6 +45,11 @@ a:hover{
     max-height: 30vw;
 }
 
+.project-icon{
+    width: 60px;
+    height: 60px;
+}
+
 .contact{
     font-size: 25px;
     color: black;
@@ -52,6 +62,20 @@ a:hover{
     width: 50%;
     float: left;
     padding: 15px;
+}
+
+
+
+#projects h3{
+    display: inline-block;
+}
+
+#projects img{
+    float: right;
+}
+
+#projects a{
+    font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -73,5 +97,10 @@ a:hover{
         position: relative;
         max-width: 90%;
         min-width: 90%;
+    }
+    .tabletMaterial{
+        text-align: left;
+        padding: 8vw;
+        max-height: 30vw;
     }
 }

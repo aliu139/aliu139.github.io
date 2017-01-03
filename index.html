@@ -38,17 +38,38 @@
     </div>
 
     <div id="side" class="blob">
-        <h2> Projects </h2>
+        <div id="projects">
+            <h2> Projects </h2>
+
+            <div>
+                <h3> {{display.title}}</h3>
+                <img v-bind:src="display.pic" class="img-circle project-icon"> </img>   
+                <p> {{display.description}} </p>
+            </div>
+
+            <a class="icon ion-monitor" v-bind:href="display.url1"> Example </a>
+            <a class="icon ion-code" v-bind:href="display.url2"> View Source </a>
+            
+            <a class="icon ion-arrow-right-c" style="float:right;" v-if="counter < li.length - 1" v-on:click="next()"></a>
+            <a class="icon ion-arrow-left-c" style="float:right;" v-if="counter > 0" v-on:click="prev()"></a>
+
+        </div>
         <hr>
-        <h2> Skills </h2>
+        <div id="experience">
+            <h2> Experience </h2>
+        </div>
         <hr>
-        <h2> Other </h2>
+        <div>
+            <h2> Other </h2>
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/carousel.js"> </script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <script src="js/components.js"></script>
   </body>
 </html>

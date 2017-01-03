@@ -1,0 +1,20 @@
+{
+    "proj": [
+        {
+            "title": "Onyx",
+            "description": "Onyx is our attempt at bringing simple and intuitive navigation to the smartwatch market. Instead of displaying complex text directions, our app displays a single arrow that points in the direction of your target. With its companion app for the iPhone, you can tap a point nearby you to start navigating!",
+            "url1": "https://devpost.com/software/onyx",
+            "url2": "https://github.com/aliu139/onyx",
+            "pic": "https://raw.githubusercontent.com/aliu139/Onyx/master/resources/images/logo.jpg"
+        },
+        {
+            "title": "EagleEye",
+            "description": "EagleEye links into already existing CCTV feeds + webcam streams but provides a new wealth of data, simply by pairing the power of machine learning algorithms with the data already being captured. All of this is then output to a simple-to-use front-end website, where you can not only view updates in real-time but also filter your existing data to derive actionable insights about your customer base.",
+            "url1": "https://aliu139.github.io/eagleEye/index.html",
+            "url2": "https://github.com/aliu139/eagleEye",
+            "pic": "https://raw.githubusercontent.com/aliu139/eagleEye/master/res/ee.png"
+        }
+    ],
+    "exp": [],
+    "tablet": []
+}
