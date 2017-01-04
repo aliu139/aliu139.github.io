@@ -17,9 +17,9 @@ var projects = new Vue({
     display: {
         "title": "Onyx",
         "description": "Onyx is our attempt at bringing simple and intuitive navigation to the smartwatch market. Instead of displaying complex text directions, our app displays a single arrow that points in the direction of your target. With its companion app for the iPhone, you can tap a point nearby you to start navigating!",
-        "url1": "https://devpost.com/software/onyx",
-        "url2": "https://github.com/aliu139/onyx",
-        "pic": "https://raw.githubusercontent.com/aliu139/Onyx/master/resources/images/logo.jpg"
+        "url1": "//devpost.com/software/onyx",
+        "url2": "//github.com/aliu139/onyx",
+        "pic": "//raw.githubusercontent.com/aliu139/Onyx/master/resources/images/logo.jpg"
     },
     counter: 0
   },
@@ -47,10 +47,10 @@ var experience = new Vue({
     message: 'Hello Vue!',
     li: [],
     display: {
-      pic: "http://ieeecornell.org/wp-content/themes/ieeecornell/img/cornell-logo.gif",
+      pic: "../res/exp/cornell.gif",
       dates: "2014-2018",
       square: false,
-      url: "https://www.cornell.edu/"
+      url: "//www.cornell.edu/"
     }
   }
 });
