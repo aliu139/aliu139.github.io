@@ -1,9 +1,7 @@
 var tablet = new Vue({
   el: '#tablet',
   data: {
-    message: 'Hello Vue!',
-    li: [],
-    display: {}
+    message: 'Hello Vue!'
   },
   methods: {
     checkScreen: function(){
@@ -60,9 +58,8 @@ var experience = new Vue({
 $.getJSON('../res/data.json', function(data) {
     var res = data;
 
-    tablet.$data.li = res.tablet;
     projects.$data.li = res.proj;
     experience.$data.li = res.exp;
      
-    console.log("done with data");
+    //console.log("done with data");
 });
