@@ -13,6 +13,27 @@
             "url1": "https://aliu139.github.io/eagleEye/index.html",
             "url2": "https://github.com/aliu139/eagleEye",
             "pic": "https://raw.githubusercontent.com/aliu139/eagleEye/master/res/ee.png"
+        },
+        {
+            "title": "gitPush",
+            "description": "Enter gitPush. Just like many other kids out there, we wanted to be able to code like a Jedi, able to move walls of code with a mere push. Many hackers have the phrases git add / git commit / git push in their muscle memory, so why not do that with the flick of a wrist?",
+            "url1": "https://devpost.com/software/gitpush-kjadye",
+            "url2": "https://github.com/aliu139/gitPush",
+            "pic": "https://raw.githubusercontent.com/aliu139/gitPush/master/gitpush.png"
+        },
+        {
+            "title": "ForkMe",
+            "description": "In a perfect world, every repository on GitHub would have a clear README, capable of letting visitors know about the purpose, usages, and history behind a project. However, writing a consise yet comprehensive README is an art that takes time and thought. ForkMe is our attempt at disrupting the current ecosystem of READMEs, by automating the process! Even if you aren't familiar with the newest startup jargon, let our product revolutionize the way that you document your product.",
+            "url1": "https://aliu139.github.io/forkme/",
+            "url2": "https://github.com/aliu139/forkme",
+            "pic": "https://github.com/aliu139/forkme/raw/master/forkme.png"
+        },
+        {
+            "title": "CardsAgainstOCaml",
+            "description": "Cards Against OCaml is a multiplayer, server-client implementation of the popular card game Cards Against Humanity. Written in November of 2015 as the final project for CS 3110 at Cornell University, Cards Against OCaml was a team effort representing the result of several weeks of design, implementation, and testing.",
+            "url1": "https://mattli96.github.io/CardsAgainstOcaml/",
+            "url2": "https://github.com/MattLi96/CardsAgainstOcaml",
+            "pic": "https://mattli96.github.io/CardsAgainstOcaml/res/main.png"
         }
     ],
     "exp": [
