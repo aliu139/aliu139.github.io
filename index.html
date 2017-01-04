@@ -22,9 +22,9 @@
 
         <div id="tablet">
             <img class="backgroundTablet" src="res/surface.png">
-            <div class="tabletMaterial">
+            <div id="tabletMaterial">
                 <div v-if="checkScreen()">
-                    <h2 style="margin: 0">
+                    <h2>
                     <img        src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdZAAAAJGZlOWRlNTc4LTQzYWYtNGQyYy05OWEwLTcxZDU3MWRjOTQwYQ.jpg"
 
                     class="img-circle profile-picture"
@@ -33,7 +33,7 @@
                     alert("Hello!")
                     </h2>
 
-                    <p class="tablet-text"> Please take a look at some of the projects that I've build! If you need to contact me, please refer to my contact information and resume below!</p>
+                    <p> Please take a look at some of the projects that I've build! If you need to contact me, please refer to my contact information and resume below!</p>
                 </div>
 
                 <div v-if="!checkScreen()">
@@ -45,10 +45,10 @@
         </div>
 
         <div id="contactMe">
-            <a href="mailto:liu.austin.r@gmail.com" class="icon ion-ios-email-outline contact"> </a>
-            <a href="https://www.dropbox.com/s/xoga0s9afzcaijo/Liu_Austin_Resume_FA16.pdf?dl=0" class="icon ion-ios-paper-outline contact"> </a>
-            <a href="https://github.com/aliu139" class="icon ion-social-github-outline contact"> </a>
-            <a href="https://www.linkedin.com/in/aliu139" class="icon ion-social-linkedin-outline contact"> </a>
+            <a href="mailto:liu.austin.r@gmail.com" class="icon ion-ios-email-outline"> </a>
+            <a href="https://www.dropbox.com/s/xoga0s9afzcaijo/Liu_Austin_Resume_FA16.pdf?dl=0" class="icon ion-ios-paper-outline"> </a>
+            <a href="https://github.com/aliu139" class="icon ion-social-github-outline"> </a>
+            <a href="https://www.linkedin.com/in/aliu139" class="icon ion-social-linkedin-outline"> </a>
         </div>
     </div>
 
@@ -60,14 +60,13 @@
                 <h3> {{display.title}}</h3>
                 <img v-bind:src="display.pic" class="img-circle project-icon"> </img>   
                 <p> {{display.description}} </p>
-            </div>
+            </div>            
 
             <a class="icon ion-monitor" v-bind:href="display.url1"> Example </a>
             <a class="icon ion-code" v-bind:href="display.url2"> View Source </a>
             
-            <a class="icon ion-arrow-right-c" style="float:right;" v-if="counter < li.length - 1" v-on:click="next()"></a>
-            <a class="icon ion-arrow-left-c" style="float:right;" v-if="counter > 0" v-on:click="prev()"></a>
-
+            <a class="icon ion-arrow-right-c grow" style="float:right;" v-if="counter < li.length - 1" v-on:click="next()"></a>
+            <a class="icon ion-arrow-left-c grow" style="float:right;" v-if="counter > 0" v-on:click="prev()"></a>
         </div>
 
         <div id="experience">
@@ -77,7 +76,7 @@
                 <img 
                     v-bind:src="display.pic" 
                     v-bind:class="{ 'img-circle': !display.square }" 
-                    class="project-icon">
+                    class="project-icon focus">
                 </img>
                 <p> {{display.dates}} </p>
                 </a>
@@ -87,18 +86,18 @@
                 <img 
                     v-bind:src="el.pic" 
                     v-bind:class="{ 'img-circle': !el.square }" 
-                    class="project-icon">
+                    class="project-icon focus">
                 </img>
                 <p> {{el.dates}} </p>
                 </a>
             </div>
         </div>
 
-        <div>
+        <div id="other">
             <span>
-                <h2 style="display: inline-block; padding-right: 15px"> Other </h2>
-                <a href="https://www.instagram.com/liu.austin/" class="icon ion-social-instagram-outline contact"> </a>
-                <a href="https://medium.com/@aliu139" class="icon ion-ios-bookmarks-outline contact"> </a>
+                <h2> Other </h2>
+                <a class="icon ion-social-instagram-outline" href="https://www.instagram.com/liu.austin/"> </a>
+                <a class="icon ion-ios-bookmarks-outline" href="https://medium.com/@aliu139"> </a>
             </span>
             <p> Besides attending hackathons, coding side projects, and adding easter eggs to my previous projects, I also enjoy cardistry and magic. Perhaps, I've included a few easter eggs in this site too?</p>
         </div>

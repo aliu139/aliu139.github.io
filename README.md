@@ -12,3 +12,5 @@ This is my third time remaking my entire site from scratch. This time around, I'
 * [Bootstrap](http://getbootstrap.com/)
 * [Google Fonts](https://fonts.google.com/)
 * [Ionicons](http://ionicons.com/)
+* [cheet.js](http://lou.wtf/cheet.js/)
+* [Facebook Design](http://facebook.design/)

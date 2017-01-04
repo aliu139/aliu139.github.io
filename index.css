@@ -1,3 +1,4 @@
+/* General Overrides*/
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -11,6 +12,7 @@ a{
     padding-right: 5px;
 }
 
+/* Section Overrides */
 #main{
     text-align: center;
     display: block;
@@ -25,20 +27,16 @@ a{
     text-decoration: underline;
 }
 
-#experience p{
-    margin: 0px;
-}
-
-.experience-icon{
-    display: inline-block;
-    padding: 3px;
-    text-align: center;
-    margin-top: 10px;
-}
-
 #contactMe{
     margin-top: 3vh;
     text-align: center;
+}
+
+#contactMe a{
+    font-size: 25px;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #tablet{
@@ -49,38 +47,18 @@ a{
     min-width: 90%;
 }
 
-.backgroundTablet{
-    width: 100%;
-    position:absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-    z-index: -1;
-}
-
-.tabletMaterial{
+#tabletMaterial{
     text-align: left;
     padding: 5vw;
     max-height: 30vw;
 }
 
-.project-icon{
-    width: 45px;
-    height: 45px;
+#tabletMaterial h2{
+    margin: 0;
 }
 
-.contact{
-    font-size: 25px;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.blob{
-    display: block;
-    width: 50%;
-    float: left;
-    padding: 15px;
+#tabletMaterial p{
+    margin-top: 10px;
 }
 
 #projects h3{
@@ -95,15 +73,76 @@ a{
     font-size: 20px;
 }
 
+#experience p{
+    margin: 0px;
+}
+
+#other h2{
+    display: inline-block; 
+    padding-right: 15px;
+}
+
+#other a{
+    font-size: 25px;
+}
+
+/* Classes */
+.experience-icon{
+    display: inline-block;
+    padding: 3px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.backgroundTablet{
+    width: 100%;
+    position:absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.project-icon{
+    width: 45px;
+    height: 45px;
+}
+
+.blob{
+    display: block;
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
 .profile-picture{
     width: 100px;
     display: inline-block;
 }
 
-.tablet-text{
-    margin-top: 10px;
+/* Transitions*/
+.focus {
+   opacity: 0.6;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
 }
 
+.focus:hover {
+    opacity: 1;
+}
+
+.grow{
+    transition: transform .2s ease-in-out;
+    -moz-transition: transform .2s ease-in-out;
+    -webkit-transition: transform .2s ease-in-out;
+}
+
+.grow:hover{
+    transform: scale(1.4); 
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     /* Mobile Specific Changes*/
 
@@ -126,7 +165,7 @@ a{
         max-width: 90%;
         min-width: 90%;
     }
-    .tabletMaterial{
+    #tabletMaterial{
         text-align: left;
         padding: 8vw;
         max-height: 30vw;
