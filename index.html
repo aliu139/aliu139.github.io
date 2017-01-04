@@ -45,7 +45,19 @@
                     <p> Please take a look at some of the projects that I've build! If you need to contact me, please refer to my contact information and resume below! </p>
                 </div>
             </div>
-        </img>
+            </img>
+        </div>
+
+        <div id="secret" class="progress" v-if="value > 0">
+            <div v-if="value < 100" class="progress-bar progress-bar-striped active" role="progressbar" v-bind:style="{ width: value+ '%' }">
+                {{value}}%
+            </div>
+
+            <div v-if="value == 100">
+                <a v-bind:href="url">
+                    {{display}}
+                </a>
+            </div>
         </div>
 
         <div id="contactMe">

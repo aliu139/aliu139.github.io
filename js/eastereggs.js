@@ -1,15 +1,35 @@
-cheet('m a g i c', {
+cheet('m a g i', {
   next: function (str, key, num, seq) {
-    console.log('key pressed: ' + key);
-    console.log('progress: ' + num / seq.length);
-    console.log('seq: ' + seq.join(' '));
+    console.log('Keystroke: ' + key);
+    secret.$data.value = (num+1) / seq.length * 100;
   },
 
   fail: function () {
-    console.log('sequence failed');
+    console.log('Maybe the word that you were looking for is [m a g i]?');
+    secret.$data.value = 0;
   },
 
   done: function () {
-    console.log('+30 lives ;)');
+    secret.$data.display = "Magi (n.): plural of magus (a magician, sorcerer, or astrologer)";
+    secret.$data.url = "//youtu.be/vaRiu7mNPS8";
+    cheet.disable('m a g i');
+  }
+});
+
+cheet('c a r d i s t r y', {
+  next: function (str, key, num, seq) {
+    console.log('Keystroke: ' + key);
+    secret.$data.value = (num+1) / seq.length * 100;
+  },
+
+  fail: function () {
+    console.log('Maybe the word that you were looking for is [c a r d i s t r y]?');
+    secret.$data.value = 0;
+  },
+
+  done: function () {
+    secret.$data.display = "Cardistry (n.): the art of card flourishing";
+    secret.$data.url = "//youtu.be/JQG9mUKrufo";
+    cheet.disable('c a r d i s t r y');
   }
 });

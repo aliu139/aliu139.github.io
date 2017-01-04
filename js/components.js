@@ -55,6 +55,15 @@ var experience = new Vue({
   }
 });
 
+var secret = new Vue({
+  el: '#secret',
+  data:{
+    display: '',
+    url: '',
+    value: 0
+  }
+});
+
 $.getJSON('../res/data.json', function(data) {
     var res = data;
 
