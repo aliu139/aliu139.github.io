@@ -22,7 +22,7 @@
   <body>
     <div id="main" class="blob">
         <h1> Austin Liu </h1>
-        <p> Developer | Cornellian | Magician</p>
+        <p id="titleType"> Developer | Cornellian | Magician</p>
 
         <div id="tablet">
             <img class="backgroundTablet" src="res/surface.png">
@@ -37,7 +37,7 @@
                     alert("Hello!")
                     </h2>
 
-                    <p> Please take a look at some of the projects that I've build! If you need to contact me, please refer to my contact information and resume below!</p>
+                    <p id="tabletType"> Please take a look at some of the projects that I've build! If you need to contact me, please refer to my contact information and resume below!</p>
                 </div>
 
                 <div v-if="!checkScreen()">
@@ -107,14 +107,15 @@
         </div>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.0.0.min.js"></script> 
     <script src="//unpkg.com/vue/dist/vue.js"></script>
-
     <script src="js/components.js"></script>
 
     <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js"
         type="text/javascript"></script>
-
     <script src="js/eastereggs.js"></script>
+    
+    <script src="//cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
+    <script src="js/typing.js"></script>
   </body>
 </html>
