@@ -15,3 +15,4 @@ This is my third time remaking my entire site from scratch. This time around, I'
 * [cheet.js](http://lou.wtf/cheet.js/)
 * [Facebook Design](http://facebook.design/)
 * [TypeIt](http://macarthur.me/typeit/)
+* [JQueryTerminal](http://terminal.jcubic.pl/)
