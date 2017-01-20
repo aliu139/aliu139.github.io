@@ -48,7 +48,7 @@ var ghPages = function(username, term){
             url: github+"/users/" + username + "/repos",
             success: function(res){
                 res.forEach(function(el){
-                    if(el.has_pages){
+                    if(el.has_pages && !el.fork){
                         term.echo(el.name);
                         term.echo(el.description);
                         if(el.has_pages){
