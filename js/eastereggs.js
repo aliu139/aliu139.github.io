@@ -33,3 +33,17 @@ cheet('c a r d i s t r y', {
     cheet.disable('c a r d i s t r y');
   }
 });
+
+cheet('l s', {
+  next: function (str, key, num, seq) {
+    console.log('Keystroke: ' + key);
+  },
+
+  fail: function () {
+    console.log('Maybe the command that you were looking for is [l s]?');
+  },
+
+  done: function () {
+    window.location.href = "res/term/term.html";
+  }
+});
