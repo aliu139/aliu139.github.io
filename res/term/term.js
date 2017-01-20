@@ -1,5 +1,5 @@
 const github = "//api.github.com";
-const mySite = "aliu139.github.io";
+const domain = ".github.io";
 
 var commands = {
     "help": {
@@ -52,7 +52,7 @@ var ghPages = function(username, term){
                         term.echo(el.name);
                         term.echo(el.description);
                         if(el.has_pages){
-                            term.echo(showGHLink(el.name));
+                            term.echo(showGHLink(username, el.name));
                         }
                         term.echo('\n');
                         term.echo("Fork it at: " + el.html_url);
@@ -66,12 +66,12 @@ var ghPages = function(username, term){
     );
 }
 
-var showGHLink = function(repoName){
-    if(repoName.includes(mySite)){
-        return "https://" + mySite;
+var showGHLink = function(username, repoName){
+    if(repoName.includes(username + domain)){
+        return "https://" + username + domain;
     }
     else{
-        return "https://" + mySite + "/" + repoName;
+        return "https://" + username + domain + "/" + repoName;
     }
 }
 
