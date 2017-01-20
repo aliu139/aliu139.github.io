@@ -1,13 +1,33 @@
 const github = "//api.github.com";
 const mySite = "aliu139.github.io";
 
+var commands = {
+    "help": {
+        "help": "Displays all the commands and their usages"
+    },
+    "ghpages": {
+        "help": "Displays a list of GitHub Repositories with gh-pages associated. (If a username is supplied, it will list the repositories of that user. Else, it will default to aliu139.) \nEx. <ghpages techlover10> will display all repositories of that user"
+    }
+}
+
 jQuery(function($, undefined) {
     $('#terminal').terminal(function(command, term) {
         if (command !== '') {
             command = command.trim();
-            switch(command){
+
+            let args = command.split(" ");
+
+            switch(args[0]){
                 case "ghpages":
-                    ghPages('aliu139', term);
+                    if(args.length > 1){
+                        ghPages(args[1], term);
+                    }
+                    else{
+                        ghPages('aliu139', term);
+                    }
+                    break;
+                case "help":
+                    showHelp(term);
                     break;
                 default:
                     term.echo("Command not recognized. Please try again!");
@@ -18,10 +38,7 @@ jQuery(function($, undefined) {
         greetings: 'Welcome to the Terminal! (aliu139.github.io)\nType \'help\' for more information \n \n',
         name: 'aliu139.terminal',
         prompt: 'js> ',
-        completion: [
-            'help',
-            'ghpages'
-        ]
+        completion: Object.keys(commands)
     });
 });
 
@@ -56,4 +73,10 @@ var showGHLink = function(repoName){
     else{
         return "https://" + mySite + "/" + repoName;
     }
+}
+
+var showHelp = function(term){
+    Object.keys(commands).forEach(function(el){
+        term.echo(el + " : " + commands[el].help + "\n");
+    });
 }
