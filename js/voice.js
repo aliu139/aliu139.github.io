@@ -16,7 +16,7 @@ if (annyang) {
     // Add our commands to annyang
     annyang.addCommands(commands);
 
-    $('#tablet').click( () => 
+    $('#tablet').click(() =>
         annyang.start()
     );
 }
