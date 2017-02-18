@@ -16,6 +16,7 @@ if (annyang) {
     // Add our commands to annyang
     annyang.addCommands(commands);
 
-    // Start listening. You can call this here, or attach this call to an event, button, etc.
-    annyang.start();
+    $('#tablet').click( () => 
+        annyang.start()
+    );
 }
